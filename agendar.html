@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escolha o Dia, Hora e Corte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Escolha o Dia, Hora e Corte</h1>
+        <form id="agendamento-form">
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Hora:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="corte">Tipo de Corte:</label>
+            <select id="corte" name="corte" required>
+                <option value="corte1">Corte 1</option>
+                <option value="corte2">Corte 2</option>
+                <option value="corte3">Corte 3</option>
+            </select>
+            
+            <button type="submit" class="button">Confirmar Agendamento</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
