@@ -11,12 +11,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
             const message = `Agendamento confirmado para ${date} às ${time} para o corte ${corte}.`;
 
-            // Enviar mensagem para o WhatsApp do cabeleireiro
-            const phoneNumber = '5516992153271'; // Substitua pelo número do cabeleireiro
+            const phoneNumber = '5516992153271';
             const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
 
-            // Redirecionar para a página de confirmação
             localStorage.setItem('confirmationMessage', message);
             window.location.href = 'confirmar.html';
         });
